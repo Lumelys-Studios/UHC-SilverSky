@@ -1,0 +1,41 @@
+name: UHC
+main: UHC\Main
+author: SilverSky
+version: 1.0.0
+api: 2.0.0
+commands:
+  uhcreload:
+    description: Reload the game
+    permission: uhc.command.reload
+  tpm:
+    description: Tp to yourself
+    permission: uhc.command.tp
+  uhcmake:
+    description: Make UHC game
+    usage: "/uhcmake"
+    permission: uhc.command.make
+  uhcjoin:
+    description: Join game
+    usage: "/uhcjoin"
+    permission: uhc.command.join
+  uhcquit:
+    description: Return to the lobby
+    usage: "/uhcquit"
+    permission: uhc.command.quit
+permissions:
+  uhc.command.reload:
+    description: "Reload the game"
+    default: op
+  uhc.command.tp:
+    description: "Tp to yourself"
+    default: true
+  uhc.command.make:
+    description: "Make the UHC map's zip"
+    default: op
+  uhc.command.join:
+    description: "Join UHC game"
+    default: true
+  uhc.command.quit:
+    description: "Quit UHC Game"
+    default: true
+...
